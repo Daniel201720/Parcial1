@@ -3,77 +3,144 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
-    <table class="table table-hover" id="tbl">
-      <thead>
-        <th>Alimento</th>
-        <th>Calorias</th>
-        <th>Grasas</th>
-        <th>Proteinas</th>
-        <th>Carboidratos</th>
-        <th>OK</th>
-        <th>Opciones</th>
-      </thead>
-      <tbody>
-        <tr row_id="1">
-          <td ><div class="row_data" edit_type="click" col_name="fname">Arandano</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">49</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.2</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.4</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">12.7</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname"><i class="fas fa-smile-beam"></i></div></td>
-          <td>
-            <span class="btn_edit" > <a href="#" class="btn btn-link " row_id="1" > Edit </a> </span>
+      <main>
+          <form action="" class="formulario" id="formulario">
+            <table class="table table-hover" >
+                <thead>
+                  <th>Alimento</th>
+                  <th>Calorias</th>
+                  <th>Grasas</th>
+                  <th>Proteinas</th>
+                  <th>Carboidratos</th>
+                  <th>OK</th>
+                  <th>Opciones</th>
+                </thead>
+                <tbody>
+                   <tr row_id="row_1" id="row">
+                    <td ><div class="row_data"> Arandano</div><input type="text" class="form-control" value="Arandano" size="10"></td>
+                    <td ><div class="row_data">49</div><input type="text" class="form-control" value="49" size="4"></td>
+                    <td ><div class="row_data">0.2</div><input type="text" class="form-control" step="0.01" value="0.2" size="8"></td>
+                    <td ><div class="row_data">0.4</div><input type="text" class="form-control" step="0.01" value="0.4" size="8"></td>
+                    <td ><div class="row_data" >12.7</div><input type="text" class="form-control" step="0.01" value="12.7" size="8"></td>
+                    <td ><div class="row_data1"><i class="fas fa-smile-beam"></i> 
+                      
+                    <select name="menu" id="slc1" class="selc_ok">
+                      <option>Malo</option>
+                      <option>Bueno</option>
+                    </select>
+                    
+                    </div></td>
+                    <td>
+                      
+                      <div class="1tx_edit"><a href="#" class="btn btn-link " row_id="row_1"> Editar </a></div>
+                      
+          
+          
+          
+          
+                    </td>
+                  </tr>
+
+                  <tr row_id="row_2" id="row1">
+                    <td ><div class="row_data"> Platano</div><input type="text" class="form-control" value="Platano" size="10"></td>
+                    <td ><div class="row_data">90</div><input type="text" class="form-control" value="90" size="4"></td>
+                    <td ><div class="row_data">0.3</div><input type="text" class="form-control" step="0.01" value="0.3" size="8"></td>
+                    <td ><div class="row_data">1.0</div><input type="text" class="form-control" step="0.01" value="1.0" size="8"></td>
+                    <td ><div class="row_data" >23.5</div><input type="text" class="form-control" step="0.01" value="23.5" size="8"></td>
+                    <td ><div class="row_data1"><i class="fas fa-skull-crossbones"></i>
+                      
+                    <select name="menu" id="slc2" class="selc_ok">
+                      <option>Malo</option>
+                      <option>Bueno</option>
+                    </select>
+                    
+                    </div></td>
+                    <td>
+                      
+                      <div class="1tx_edit"><a href="#" class="btn btn-link " row_id="row_2"> Editar </a></div>
+                      
+          
+          
+          
+          
+                    </td>
+                  </tr>
+                  <tr row_id="row_3" id="row2">
+                    <td ><div class="row_data"> Cereza</div><input type="text" class="form-control" value="Cereza" size="10"></td>
+                    <td ><div class="row_data">46</div><input type="text" class="form-control" value="46" size="4"></td>
+                    <td ><div class="row_data">0.4</div><input type="text" class="form-control" step="0.01" value="0.4" size="8"></td>
+                    <td ><div class="row_data">0.9</div><input type="text" class="form-control" step="0.01" value="0.9" size="8"></td>
+                    <td ><div class="row_data" >10.9</div><input type="text" class="form-control" step="0.01" value="10.9" size="8"></td>
+                    <td ><div class="row_data1"><i class="fas fa-skull-crossbones"></i>
+                      
+                    <select name="menu" id="slc3" class="selc_ok">
+                      <option>Malo</option>
+                      <option>Bueno</option>
+                    </select>
+                    
+                    </div></td>
+                    <td>
+                      
+                      <div class="1tx_edit"><a href="#" class="btn btn-link " row_id="row_3"> Editar </a></div>
+                      
+          
+          
+          
+          
+                    </td>
+                  </tr>
+                  <tr row_id="row_4" id="row3">
+                    <td ><div class="row_data"> Fresa</div><input type="text" class="form-control" value="Fresa" size="10"></td>
+                    <td ><div class="row_data">37</div><input type="text" class="form-control" value="37" size="4"></td>
+                    <td ><div class="row_data">0.5</div><input type="text" class="form-control" step="0.01" value="0.5" size="8"></td>
+                    <td ><div class="row_data">0.8</div><input type="text" class="form-control" step="0.01" value="0.8" size="8"></td>
+                    <td ><div class="row_data" >8.3</div><input type="text" class="form-control" step="0.01" value="8.3" size="8"></td>
+                    <td ><div class="row_data1"><i class="fas fa-smile-beam"></i> 
+                      
+                    <select name="menu" id="slc4" class="selc_ok">
+                      <option>Malo</option>
+                      <option>Bueno</option>
+                    </select>
+                    
+                    </div></td>
+                    <td>
+                      
+                      <div class="1tx_edit"><a href="#" class="btn btn-link " row_id="row_4"> Editar </a></div>
+                      
+          
+          
+          
+          
+                    </td>
+                  </tr>
+          
+          
+          
+          
+                </tbody>
+          
+              </table>
+          </form>
+
+          <p><h6>Pulse aceptar los cambios</h6></p>
+          <div><button type="button" class="btn btn-success" id="save">Enviar</button> <button type="button" class="btn btn-danger" id="reset">Cancelar</button></div>
+    
+      </main>
+    
+
+    
 
 
-
-
-          </td>
-        </tr>
-        <tr row_id="2">
-          <td ><div class="row_data" edit_type="click" col_name="fname">Arandano</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">49</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.2</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.4</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">12.7</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname"><i class="fas fa-skull-crossbones"></i></i></div></td>
-          <td>
-            <span class="btn_edit" > <a href="#" class="btn btn-link " row_id="2" > Edit </a> </span>
-
-
-
-
-          </td>
-        </tr>
-        <tr row_id="3">
-          <td ><div class="row_data" edit_type="click" col_name="fname">Arandano</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">49</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.2</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">0.4</div></td>
-          <td ><div class="row_data" edit_type="click" col_name="fname">12.7</div></td>
-          <td>
-            <span class="btn_edit" > <a href="#" class="btn btn-link " row_id="3" > Edit </a> </span>
-            
-
-
-          </td>
-        </tr>
-
-
-
-
-      </tbody>
-
-    </table>
-
-
-    <script src="js/formulario.js"></script>
-	  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/edicion.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+      
   </body>
 
 </html>
